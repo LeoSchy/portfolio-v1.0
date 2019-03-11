@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Leonardo Schymansky's Portfolio v1.0</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Montserrat');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ade6d8;
+}
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background: #d6e6d6;
+}
+
+nav ol {
+  display: flex;/*
+  flex-direction: row;
+  justify-content: space-around;*/
+  list-style-type: none;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: 2%;
+  padding: 20px 30px;
+}
+
+.nav-link {
+  margin: 0;
+  white-space: nowrap;
+}
+
+li a:link,li a:visited {
+  padding: 20px;
+  text-decoration: none;
+  color: #1c3c1c;
+}
+
+li a:hover,li a:active {
+    color: #dbffdb;
+    background-color: #759975;
+  transition: 1s;
+}
+
+#navbar {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+#subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+.anchor {
+  position: relative;
+}
+
+.real_target {
+  position: relative;
+  /*top: -60px;*/
+}
+
+.visual_target {
+  position: relative;
+  top: 60px;
+}
+
+#welcome-section  {
+  background: #d6e6d6;
+  vertical-align: center;
+  height: 100vh;
+}
+
+#welcome-title {
+  text-align: center;
+  margin-top: 30vh;
+}
+
+#projects {
+  background: #E6E6FA;
+  padding-bottom: 60px;
+}
+
+.proj-container {
+  display: flex;
+  margin: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-tile {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  /*border: solid;
+  border-radius: 5px;
+  border-color: #D8BFD8;*/
+  width: 360px;
+  height: auto;
+  margin: 25px 5vw;
+  padding: 2vw;
+}
+
+.proj-img {
+  width: 350px;
+  height: 262px;
+}
+
+.proj-title {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+#contact {
+  background: #ade6d8;
+  height: 45vh;
+}
+
+.contact-container {  
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: -10px;
+  flex-wrap: wrap;
+  height: 100px;
+}
+
+.contact-logo {
+  width: 100px;
+  height: 100px;
+}
+
+#codepen-logo {
+  margin-top: 17px;
+  margin-left: 17px;
+  width: 65px;
+  height: 65px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 5vw;
+  }
+  #subtitle {
+    font-size: 3vw;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav id="navbar">
+  <ol>
+    <li class="nav-link"><a href="#t_welcome">Sobre mí</a></li>
+    <li class="nav-link"><a href="#projects">Proyectos</a></li>
+    <li class="nav-link"><a href="#contact">Contacto</a></li>
+  </ol>
+</nav>
+
+<section id="welcome-section" class="anchor">
+  <a class="real_target" name="t_welcome">&nbsp;</a>
+  <h1 id="welcome-title" class="visual_target title">
+    Hola, mi nombre es Leonardo.
+  </h1>
+  
+  <div id="subtitle" class="visual_target">
+    soy desarrollador front-end
+  </div>
+  
+</section>
+
+<section id="projects" class="anchor">
+  <a class="real_target" name="t_projects">&nbsp;</a>
+  <h1 class="visual_target title">
+    Estos son algunos de mis proyectos.
+  </h1>
+  
+  <div class="proj-container">
+    <div id="proy1" class="project-tile">
+      <img class="proj-img" src="https://lh3.googleusercontent.com/E3ZC4SBWTxgxMXSFnoFxcgxejpcjMJJZcyswXHtaXzByQGi4TywFk1-ZxPXycmCZYMxYbcQHtf264nNdYlvtVXOjTvsjpOvWFz8mRE_pahBL83foWBVI9i14sz1JKKao4UqYPg_OxA=w2400" alt="landingpage-Preview">
+      <a class="proj-title" href="https://codepen.io/leoschy/full/gQpLKd" target="_blank">
+      Propuesta de FMF Landing Page
+      </a>
+    </div>
+  
+    <div id="proy2" class="project-tile">
+      <img class="proj-img" src="https://lh3.googleusercontent.com/afxUapBB8107Ure7z4iRtdNxuBGX2lIz6Kt7X5apjr3uTgNbYmkufbBjQaTcp21_3mUYGuh4OKQK0t9WMeoKX7dUSErkAUOz54rzmmuBCvCICij2qsccjymV17sKN993a0aEUydBug=w2400" alt="docpage-Preview">
+      <a class="proj-title" href="https://codepen.io/leoschy/full/WPzbmy" target="_blank">
+      Página de documentación
+      </a>
+    </div>
+  
+    <div id="proy3" class="project-tile">
+      <img class="proj-img" src="https://lh3.googleusercontent.com/9PqTRlsfe8R4WmWUWcgwWSZG96VA0rceX0A3TP-089c9cWKFD9Yd245j3JXw-oXy9_fGTsY0FdjrcnDp86vecsEDafQ2legnla-W5BUhmXuqhYG-KNgReHAKlyUvb2VqLP0tF8zitA=w2400" alt="surveyform-Preview">
+      <a class="proj-title" href="https://codepen.io/leoschy/full/YOjjRz" target="_blank">
+      Formulario para pacientes nuevos
+      </a>
+    </div>
+  
+    <div id="proy4" class="project-tile">
+      <img class="proj-img" src="https://lh3.googleusercontent.com/czPQw3gVhMn9crcYldltemFXskdVHHdMmFxJpeZxFtXkaMb3R7tgKqlBs408_NFXOb6lJAR-Bnp7BwZ7JOfDH8ksTodm1IZ_C2ZQXlK84EGigPXXrX2j18k2QMu99knJlJRpPHTImg=w2400" alt="tributepage-Preview">
+      <a class="proj-title" href="https://codepen.io/leoschy/full/KRdmwE" target="_blank">
+      Página Tributo
+      </a>
+    </div>  
+  </div>
+</section>
+
+<section id="contact" class="anchor">
+  <a class="real_target" name="t_contact">&nbsp;</a>
+  <h1 class="visual_target title">
+    Trabajemos juntos...    
+  </h1>
+  
+  <div class="contact-container">
+    <div class="contact-link">
+      <a href="https://www.linkedin.com/in/leonardoschymansky/" target="_blank">
+        <img class="contact-logo" src="https://lh3.googleusercontent.com/RN6hlhMsm-oGLo8fOW1cevmTfcFtJY368LchhscRK_UwHEDlgGDdI3bMlO41vW7DCkClu1L1eVAg4IM9KxLJ3irTdZrHVsq9pTL6lzlrhxRZlLnO0I0anN-N77wskoSvYDE9NWE3YA=s256-p-k">
+      </a>
+    </div>
+    
+    <div class="contact-link">
+      <a href="https://github.com/LeoSchy" target="_blank" id="profile-link">
+        <img class="contact-logo" src="https://lh3.googleusercontent.com/vUViY976U5NwmXpNTVMHQE6uEK_mEslu1Yko-l-i-uT_8DOi7EWHfVYKbvnKBnpx-XGkrQl13DQEGLnJIor5N3ASksERyOPCJvC9KUiIuB9vjgjhxcwA6tFk6eNQKqgIzLVrppFa8A=w2400">
+      </a>
+    </div>
+    
+    <div class="contact-link">
+      <a href="https://codepen.io/leoschy/" target="_blank">
+        <img class="contact-logo" id="codepen-logo" src="https://lh3.googleusercontent.com/wDWyBHKnpYNhTvlYj425F2p441U4Bho1wDpcS5wbjMxIOnPo2YOjlXYnrGw-EZwuC8poHeJGf6xBy-uctRd3gGggdSXv1Q3ALTs3s4lXij5Tl8NfZnzvWX4vwxqyqE0HEItZYWlYmQ=w2400">
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
